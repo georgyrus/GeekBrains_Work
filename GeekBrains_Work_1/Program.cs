@@ -34,9 +34,18 @@ void printArreyString(string[] col)
 void printArrey(string[] col)
 {
     int count = col.Length;
-    for (int i=0; i < count; i++)
+    Console.Write("[");
+    Console.Write(col[0]);
+    if (count > 0)
     {
-        Console.WriteLine(col[i]);
+ 
+        for (int i=1; i < count; i++)
+        {
+            Console.Write(", ");
+            Console.Write(col[i]);
+            
+        }
+    Console.Write("]");
     }
 }
 
